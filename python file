@@ -1,0 +1,53 @@
+# a dictionary that stores questions and answers
+# have a variable that tract the score of the player
+# loop through the dictionary using the key value pairs 
+# display each question to the user and allow them to answer
+# tell them if they are righ or wrong 
+# show the final result when quiz is completed
+
+
+quize = {
+    "question 1": {
+   "question": " what is the capital of france?",
+    "answer": "paris"
+    },
+    "question 2": {
+    "question": "what is the capital of Germany?",
+    "answer": "Berlin"
+    },
+    "question 3": {
+    "question": "what is the capital of italy?",
+    "answer": "Rome"
+    },
+    "question 4": {
+    "question": "what is the capital of spain?",
+    "answer": "madrid"
+    },
+    "question 5": {
+    "question": "what is the capital of portugal?",
+    "answer": "lisbon"
+    },
+    "question 6": {
+    "question": "what is the capital of switzerland?",
+    "answer": "Bern"
+    },
+    "question 7": {
+    "question": "what is the capital of Ausria?",
+    "answer": "vienna"
+    },
+
+}
+
+score = 0
+for key, value in quize.items():
+    print(value['question'])
+    answer = input("Answer? ")
+
+    if answer.lower() == value['answer'].lower():
+        print('correct')
+        score = + 1
+        print("your score is: " + str(score))
+    else:
+        print("wrong!")
+        print("the answer is : " + value['answer'])
+        print("your score is: " + str(score))
